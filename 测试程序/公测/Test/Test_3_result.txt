@@ -1,0 +1,20 @@
+ !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+
+helloworld!
+*
+_
+10
+233
+please input number counts:
+"Input"(int num)
+-20
+b
+_a is-21
+_a is2
+_a is-40
+_a is4
+_a is0
+if ok....perhaps0
+_a is666
+""
+...

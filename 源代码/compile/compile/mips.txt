@@ -1,0 +1,3154 @@
+.data
+cst1: .word 1
+cst2: .word 2
+cst3: .word 3
+csta: .word 97
+cstb: .word 98
+cstc: .word 99
+g_a: .word 0
+g_b: .word 0
+g_arr: .word 0:2048
+g_stra: .word 0:1024
+g_strb: .word 0:2048
+tempVar7: .asciiz "define test passed"
+tempVar53: .asciiz "operator test passed"
+tempVar54: .asciiz "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+tempVar55: .asciiz "!#$%&'()*+,-./:;<=>?@[]^_`{|}~"
+tempVar58: .asciiz "dowhile test passed"
+tempVar99: .asciiz "ifcondition clause error!"
+tempVar101: .asciiz "ifcondition clause error"
+tempVar128: .asciiz "switchcodintion clause  error!"
+tempVar131: .asciiz "switchcodintion clause  error!"
+tempVar139: .asciiz "error 0"
+tempVar144: .asciiz "error 1"
+tempVar149: .asciiz "error 2"
+tempVar155: .asciiz "condition test passed"
+tempVar190: .asciiz "miscellaneous test passed"
+tempVar210: .asciiz "Fibonaci: Please input a unsigned positive integer ?"
+tempVar215: .asciiz "Input error, try again:"
+tempVar218: .asciiz "The fibonaci's answer is "
+tempVar245: .asciiz "GCD: Please input two unsigned positive integer ?"
+tempVar254: .asciiz "Input error, try Again: "
+tempVar259: .asciiz "The gcd's answer is "
+tempVar282: .asciiz "1"
+tempVar301: .asciiz "*"
+tempVar314: .asciiz "*"
+tempVar316: .asciiz "prime_factorization: Please input a unsigned positive integer(<2^31-1) ?"
+tempVar321: .asciiz "Input error, try again:"
+tempVar326: .asciiz "The factor of n is "
+tempVar338: .asciiz "Please input Test Type:E(Easy), (M)Middle, H(Hard): "
+tempVar347: .asciiz "Try Again: "
+.text
+j label142 
+#12
+label0 :
+#13
+sw $ra -4($fp)
+#14
+li $t0 1
+sw $t0 -12($fp)
+#15
+li $t0 0
+sw $t0 -16($fp)
+#16
+li $t0 -1
+sw $t0 -20($fp)
+#17
+li $t0 120
+sw $t0 -24($fp)
+#18
+li $t0 122
+sw $t0 -28($fp)
+#19
+li $t0 65
+sw $t0 -32($fp)
+#20
+li $t0 49
+sw $t0 -36($fp)
+#21
+li $t0 47
+sw $t0 -40($fp)
+#22
+lw $t0 -12($fp)
+sw $t0 -44($fp)
+#23
+lw $a0 -44($fp)
+li $v0 1
+syscall
+#24
+lw $t0 -40($fp)
+sw $t0 -48($fp)
+#25
+lw $a0 -48($fp)
+li $v0 11
+syscall
+#26
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#27
+label1 :
+#28
+sw $ra -4($fp)
+#29
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label0 
+#30
+sw $v0 -12($fp)
+#31
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#32
+label2 :
+#33
+sw $ra -4($fp)
+#34
+#35
+#36
+#37
+#38
+#39
+#40
+#41
+#42
+#43
+#44
+#45
+#46
+#47
+#48
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#49
+label3 :
+#50
+sw $ra -4($fp)
+#51
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label2 
+#52
+sw $v0 -12($fp)
+#53
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#54
+label4 :
+#55
+sw $ra -4($fp)
+#56
+li $t0 1
+sw $t0 -12($fp)
+#57
+li $t0 122
+sw $t0 -16($fp)
+#58
+li $t0 65
+sw $t0 -20($fp)
+#59
+#60
+#61
+#62
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#63
+label5 :
+#64
+sw $ra -4($fp)
+#65
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label3 
+#66
+sw $v0 -12($fp)
+#67
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label1 
+#68
+sw $v0 -16($fp)
+#69
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label4 
+#70
+sw $v0 -20($fp)
+#71
+#72
+la $a0 tempVar7
+li $v0 4
+syscall
+#73
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#74
+label6 :
+#75
+sw $ra -4($fp)
+#76
+#77
+#78
+#79
+#80
+#81
+#82
+li $t0 1
+sw $t0 -36($fp)
+#83
+lw $t0 -36($fp)
+sw $t0 -12($fp)
+#84
+li $t0 1
+sw $t0 -40($fp)
+#85
+li $t0 2
+sw $t0 -44($fp)
+#86
+lw $t0 -40($fp)
+lw $t1 -44($fp)
+add $t0 $t0 $t1
+sw $t0 -48($fp)
+#87
+lw $t0 -48($fp)
+sw $t0 -16($fp)
+#88
+li $t0 3
+sw $t0 -52($fp)
+#89
+li $t0 1
+sw $t0 -56($fp)
+#90
+lw $t0 -52($fp)
+lw $t1 -56($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -60($fp)
+#91
+lw $t0 -60($fp)
+sw $t0 -20($fp)
+#92
+li $t0 4
+sw $t0 -64($fp)
+#93
+li $t0 0
+sw $t0 -68($fp)
+#94
+lw $t0 -68($fp)
+lw $t1 -64($fp)
+sub $t0 $t0 $t1
+sw $t0 -72($fp)
+#95
+lw $t0 -72($fp)
+sw $t0 -24($fp)
+#96
+li $t0 5
+sw $t0 -76($fp)
+#97
+lw $t0 -76($fp)
+sw $t0 -28($fp)
+#98
+li $t0 6
+sw $t0 -80($fp)
+#99
+lw $t0 -80($fp)
+sw $t0 -32($fp)
+#100
+li $t0 3
+sw $t0 -84($fp)
+#101
+lw $t0 -16($fp)
+lw $t1 -84($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -88($fp)
+#102
+lw $t0 -88($fp)
+sw $t0 -92($fp)
+#103
+lw $t0 -92($fp)
+lw $t1 -20($fp)
+add $t0 $t0 $t1
+sw $t0 -96($fp)
+#104
+li $t0 4
+sw $t0 -100($fp)
+#105
+lw $t0 -24($fp)
+lw $t1 -100($fp)
+div $t0 $t0 $t1
+sw $t0 -104($fp)
+#106
+lw $t0 -96($fp)
+lw $t1 -104($fp)
+sub $t0 $t0 $t1
+sw $t0 -108($fp)
+#107
+lw $t0 -12($fp)
+lw $t1 -12($fp)
+div $t0 $t0 $t1
+sw $t0 -112($fp)
+#108
+lw $t0 -108($fp)
+lw $t1 -112($fp)
+add $t0 $t0 $t1
+sw $t0 -116($fp)
+#109
+lw $t0 -116($fp)
+sw $t0 -12($fp)
+#110
+li $t0 0
+sw $t0 -120($fp)
+#111
+lw $t0 -120($fp)
+lw $t1 -12($fp)
+add $t0 $t0 $t1
+sw $t0 -124($fp)
+#112
+li $t0 3
+sw $t0 -128($fp)
+#113
+lw $t0 -12($fp)
+lw $t1 -128($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -132($fp)
+#114
+lw $t0 -132($fp)
+sw $t0 -136($fp)
+#115
+lw $t0 -124($fp)
+lw $t1 -136($fp)
+add $t0 $t0 $t1
+sw $t0 -140($fp)
+#116
+lw $t0 -140($fp)
+lw $t1 -20($fp)
+add $t0 $t0 $t1
+sw $t0 -144($fp)
+#117
+li $t0 4
+sw $t0 -148($fp)
+#118
+lw $t0 -24($fp)
+lw $t1 -148($fp)
+div $t0 $t0 $t1
+sw $t0 -152($fp)
+#119
+lw $t0 -144($fp)
+lw $t1 -152($fp)
+sub $t0 $t0 $t1
+sw $t0 -156($fp)
+#120
+lw $t0 -28($fp)
+lw $t1 -32($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -160($fp)
+#121
+lw $t0 -156($fp)
+lw $t1 -160($fp)
+add $t0 $t0 $t1
+sw $t0 -164($fp)
+#122
+lw $t0 -164($fp)
+sw $t0 -16($fp)
+#123
+lw $t0 -12($fp)
+sw $t0 -168($fp)
+#124
+li $t0 0
+sw $t0 -172($fp)
+#125
+lw $t0 -172($fp)
+lw $t1 -168($fp)
+sub $t0 $t0 $t1
+sw $t0 -176($fp)
+#126
+li $t0 0
+sw $t0 -180($fp)
+#127
+lw $t0 -16($fp)
+lw $t1 -180($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -184($fp)
+#128
+lw $t0 -176($fp)
+lw $t1 -184($fp)
+add $t0 $t0 $t1
+sw $t0 -188($fp)
+#129
+li $t0 1
+sw $t0 -192($fp)
+#130
+li $t0 0
+sw $t0 -196($fp)
+#131
+lw $t0 -192($fp)
+lw $t1 -196($fp)
+sub $t0 $t0 $t1
+sw $t0 -200($fp)
+#132
+lw $t0 -200($fp)
+sw $t0 -204($fp)
+#133
+lw $t0 -188($fp)
+lw $t1 -204($fp)
+sub $t0 $t0 $t1
+sw $t0 -208($fp)
+#134
+lw $t0 -208($fp)
+sw $t0 -28($fp)
+#135
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#136
+label7 :
+#137
+sw $ra -4($fp)
+#138
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label6 
+#139
+sw $v0 -12($fp)
+#140
+#141
+la $a0 tempVar53
+li $v0 4
+syscall
+#142
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#143
+label8 :
+#144
+sw $ra -4($fp)
+#145
+#146
+la $a0 tempVar54
+li $v0 4
+syscall
+#147
+#148
+la $a0 tempVar55
+li $v0 4
+syscall
+#149
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#150
+label9 :
+#151
+sw $ra -4($fp)
+#152
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label8 
+#153
+sw $v0 -12($fp)
+#154
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#155
+label10 :
+#156
+sw $ra -4($fp)
+#157
+#158
+li $t0 100
+sw $t0 -16($fp)
+#159
+lw $t0 -16($fp)
+sw $t0 -12($fp)
+#160
+#161
+la $a0 tempVar58
+li $v0 4
+syscall
+#162
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#163
+label11 :
+#164
+sw $ra -4($fp)
+#165
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label10 
+#166
+sw $v0 -12($fp)
+#167
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#168
+label12 :
+#169
+sw $ra -4($fp)
+#170
+#171
+#172
+li $t0 1
+sw $t0 -20($fp)
+#173
+lw $t0 -20($fp)
+sw $t0 -12($fp)
+#174
+li $t0 0
+sw $t0 -24($fp)
+#175
+lw $t0 -24($fp)
+sw $t0 -16($fp)
+#176
+li $t0 1
+sw $t0 -28($fp)
+#177
+lw $t0 -12($fp)
+lw $t1 -28($fp)
+seq $t0 $t0 $t1
+sw $t0 -32($fp)
+#178
+li $t0 1
+lw $t1 -32($fp)
+bne $t0 $t1 label13 
+#179
+li $t0 1
+sw $t0 -36($fp)
+#180
+lw $t0 -16($fp)
+lw $t1 -36($fp)
+add $t0 $t0 $t1
+sw $t0 -40($fp)
+#181
+lw $t0 -40($fp)
+sw $t0 -16($fp)
+#182
+j label14 
+#183
+label13 :
+#184
+label14 :
+#185
+li $t0 2
+sw $t0 -44($fp)
+#186
+lw $t0 -44($fp)
+sw $t0 -12($fp)
+#187
+li $t0 1
+sw $t0 -48($fp)
+#188
+lw $t0 -12($fp)
+lw $t1 -48($fp)
+slt $t0 $t1 $t0
+sw $t0 -52($fp)
+#189
+li $t0 1
+lw $t1 -52($fp)
+bne $t0 $t1 label15 
+#190
+li $t0 1
+sw $t0 -56($fp)
+#191
+lw $t0 -16($fp)
+lw $t1 -56($fp)
+add $t0 $t0 $t1
+sw $t0 -60($fp)
+#192
+lw $t0 -60($fp)
+sw $t0 -16($fp)
+#193
+j label16 
+#194
+label15 :
+#195
+label16 :
+#196
+li $t0 0
+sw $t0 -64($fp)
+#197
+lw $t0 -64($fp)
+sw $t0 -12($fp)
+#198
+li $t0 1
+sw $t0 -68($fp)
+#199
+lw $t0 -12($fp)
+lw $t1 -68($fp)
+slt $t0 $t0 $t1
+sw $t0 -72($fp)
+#200
+li $t0 1
+lw $t1 -72($fp)
+bne $t0 $t1 label17 
+#201
+li $t0 1
+sw $t0 -76($fp)
+#202
+lw $t0 -16($fp)
+lw $t1 -76($fp)
+add $t0 $t0 $t1
+sw $t0 -80($fp)
+#203
+lw $t0 -80($fp)
+sw $t0 -16($fp)
+#204
+j label18 
+#205
+label17 :
+#206
+label18 :
+#207
+li $t0 1
+sw $t0 -84($fp)
+#208
+lw $t0 -12($fp)
+lw $t1 -84($fp)
+sne $t0 $t0 $t1
+sw $t0 -88($fp)
+#209
+li $t0 1
+lw $t1 -88($fp)
+bne $t0 $t1 label19 
+#210
+li $t0 1
+sw $t0 -92($fp)
+#211
+lw $t0 -16($fp)
+lw $t1 -92($fp)
+add $t0 $t0 $t1
+sw $t0 -96($fp)
+#212
+lw $t0 -96($fp)
+sw $t0 -16($fp)
+#213
+j label20 
+#214
+label19 :
+#215
+label20 :
+#216
+li $t0 0
+sw $t0 -100($fp)
+#217
+lw $t0 -12($fp)
+lw $t1 -100($fp)
+sle $t0 $t1 $t0
+sw $t0 -104($fp)
+#218
+li $t0 1
+lw $t1 -104($fp)
+bne $t0 $t1 label21 
+#219
+li $t0 1
+sw $t0 -108($fp)
+#220
+lw $t0 -16($fp)
+lw $t1 -108($fp)
+add $t0 $t0 $t1
+sw $t0 -112($fp)
+#221
+lw $t0 -112($fp)
+sw $t0 -16($fp)
+#222
+j label22 
+#223
+label21 :
+#224
+label22 :
+#225
+li $t0 0
+sw $t0 -116($fp)
+#226
+lw $t0 -12($fp)
+lw $t1 -116($fp)
+sle $t0 $t0 $t1
+sw $t0 -120($fp)
+#227
+li $t0 1
+lw $t1 -120($fp)
+bne $t0 $t1 label23 
+#228
+li $t0 1
+sw $t0 -124($fp)
+#229
+lw $t0 -16($fp)
+lw $t1 -124($fp)
+add $t0 $t0 $t1
+sw $t0 -128($fp)
+#230
+lw $t0 -128($fp)
+sw $t0 -16($fp)
+#231
+j label24 
+#232
+label23 :
+#233
+label24 :
+#234
+li $t0 1
+sw $t0 -132($fp)
+#235
+li $t0 1
+sw $t0 -136($fp)
+#236
+lw $t0 -132($fp)
+lw $t1 -136($fp)
+add $t0 $t0 $t1
+sw $t0 -140($fp)
+#237
+li $t0 1
+sw $t0 -144($fp)
+#238
+lw $t0 -140($fp)
+lw $t1 -144($fp)
+add $t0 $t0 $t1
+sw $t0 -148($fp)
+#239
+li $t0 1
+sw $t0 -152($fp)
+#240
+li $t0 3
+sw $t0 -156($fp)
+#241
+lw $t0 -152($fp)
+lw $t1 -156($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -160($fp)
+#242
+lw $t0 -148($fp)
+lw $t1 -160($fp)
+add $t0 $t0 $t1
+sw $t0 -164($fp)
+#243
+lw $t0 -164($fp)
+sw $t0 -168($fp)
+#244
+lw $t0 -16($fp)
+lw $t1 -168($fp)
+sne $t0 $t0 $t1
+sw $t0 -172($fp)
+#245
+li $t0 1
+lw $t1 -172($fp)
+bne $t0 $t1 label25 
+#246
+#247
+la $a0 tempVar99
+li $v0 4
+syscall
+#248
+j label26 
+#249
+label25 :
+#250
+label26 :
+#251
+lw $t0 -16($fp)
+lw $t1 -16($fp)
+sne $t0 $t0 $t1
+sw $t0 -176($fp)
+#252
+li $t0 1
+lw $t1 -176($fp)
+bne $t0 $t1 label27 
+#253
+#254
+la $a0 tempVar101
+li $v0 4
+syscall
+#255
+j label28 
+#256
+label27 :
+#257
+label28 :
+#258
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#259
+label29 :
+#260
+sw $ra -4($fp)
+#261
+#262
+label31 :
+#263
+li $t0 1
+sw $t0 -16($fp)
+#264
+lw $t0 -12($fp)
+lw $t1 -16($fp)
+seq $t0 $t0 $t1
+sw $t0 -20($fp)
+#265
+li $t0 1
+lw $t1 -20($fp)
+bne $t0 $t1 label32 
+#266
+li $t0 2
+sw $t0 -24($fp)
+#267
+lw $t0 -24($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#268
+j label30 
+#269
+label32 :
+#270
+li $t0 2
+sw $t0 -28($fp)
+#271
+lw $t0 -12($fp)
+lw $t1 -28($fp)
+seq $t0 $t0 $t1
+sw $t0 -32($fp)
+#272
+li $t0 1
+lw $t1 -32($fp)
+bne $t0 $t1 label33 
+#273
+li $t0 3
+sw $t0 -36($fp)
+#274
+lw $t0 -36($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#275
+j label30 
+#276
+label33 :
+#277
+li $t0 3
+sw $t0 -40($fp)
+#278
+lw $t0 -12($fp)
+lw $t1 -40($fp)
+seq $t0 $t0 $t1
+sw $t0 -44($fp)
+#279
+li $t0 1
+lw $t1 -44($fp)
+bne $t0 $t1 label34 
+#280
+li $t0 4
+sw $t0 -48($fp)
+#281
+lw $t0 -48($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#282
+j label30 
+#283
+label34 :
+#284
+j label30 
+#285
+label30 :
+#286
+li $t0 5
+sw $t0 -52($fp)
+#287
+lw $t0 -52($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#288
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#289
+label35 :
+#290
+sw $ra -4($fp)
+#291
+#292
+#293
+li $t0 1
+sw $t0 -20($fp)
+#294
+lw $t0 -20($fp)
+sw $t0 -12($fp)
+#295
+li $t0 0
+sw $t0 -24($fp)
+#296
+lw $t0 -24($fp)
+sw $t0 -16($fp)
+#297
+li $t0 1
+sw $t0 -28($fp)
+#298
+lw $t0 -28($fp)
+sw $t0 -12($fp)
+#299
+j label36 
+#300
+label37 :
+#301
+li $t0 5
+sw $t0 -32($fp)
+#302
+lw $t0 -12($fp)
+lw $t1 -32($fp)
+slt $t0 $t0 $t1
+sw $t0 -36($fp)
+#303
+li $t0 1
+lw $t1 -36($fp)
+bne $t0 $t1 label38 
+#304
+label36 :
+#305
+li $t0 1
+sw $t0 -40($fp)
+#306
+lw $t0 -12($fp)
+lw $t1 -40($fp)
+add $t0 $t0 $t1
+sw $t0 -44($fp)
+#307
+#308
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label29 
+#309
+sw $v0 -48($fp)
+#310
+lw $t0 -48($fp)
+sw $t0 -52($fp)
+#311
+lw $t0 -44($fp)
+lw $t1 -52($fp)
+seq $t0 $t0 $t1
+sw $t0 -56($fp)
+#312
+li $t0 1
+lw $t1 -56($fp)
+bne $t0 $t1 label39 
+#313
+li $t0 1
+sw $t0 -60($fp)
+#314
+lw $t0 -16($fp)
+lw $t1 -60($fp)
+add $t0 $t0 $t1
+sw $t0 -64($fp)
+#315
+lw $t0 -64($fp)
+sw $t0 -16($fp)
+#316
+j label40 
+#317
+label39 :
+#318
+label40 :
+#319
+li $t0 1
+sw $t0 -68($fp)
+#320
+lw $t0 -12($fp)
+lw $t1 -68($fp)
+add $t0 $t0 $t1
+sw $t0 -72($fp)
+#321
+lw $t0 -72($fp)
+sw $t0 -12($fp)
+#322
+j label37 
+#323
+label38 :
+#324
+li $t0 4
+sw $t0 -76($fp)
+#325
+lw $t0 -16($fp)
+lw $t1 -76($fp)
+sne $t0 $t0 $t1
+sw $t0 -80($fp)
+#326
+li $t0 1
+lw $t1 -80($fp)
+bne $t0 $t1 label41 
+#327
+#328
+la $a0 tempVar128
+li $v0 4
+syscall
+#329
+j label42 
+#330
+label41 :
+#331
+label42 :
+#332
+li $t0 0
+sw $t0 -84($fp)
+#333
+lw $t0 -16($fp)
+lw $t1 -84($fp)
+sne $t0 $t0 $t1
+sw $t0 -88($fp)
+#334
+li $t0 1
+lw $t1 -88($fp)
+bne $t0 $t1 label43 
+#335
+lw $t0 -12($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#336
+j label44 
+#337
+label43 :
+#338
+label44 :
+#339
+#340
+la $a0 tempVar131
+li $v0 4
+syscall
+#341
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#342
+label45 :
+#343
+sw $ra -4($fp)
+#344
+li $t0 5
+sw $t0 -12($fp)
+#345
+#346
+li $t0 0
+sw $t0 -20($fp)
+#347
+lw $t0 -20($fp)
+sw $t0 -16($fp)
+#348
+li $t0 0
+sw $t0 -24($fp)
+#349
+lw $t0 -24($fp)
+sw $t0 -16($fp)
+#350
+j label46 
+#351
+label47 :
+#352
+lw $t0 -16($fp)
+lw $t1 -12($fp)
+slt $t0 $t0 $t1
+sw $t0 -28($fp)
+#353
+li $t0 1
+lw $t1 -28($fp)
+bne $t0 $t1 label48 
+#354
+label46 :
+#355
+label50 :
+#356
+li $t0 0
+sw $t0 -32($fp)
+#357
+lw $t0 -16($fp)
+lw $t1 -32($fp)
+seq $t0 $t0 $t1
+sw $t0 -36($fp)
+#358
+li $t0 1
+lw $t1 -36($fp)
+bne $t0 $t1 label51 
+#359
+li $t0 0
+sw $t0 -40($fp)
+#360
+lw $t0 -16($fp)
+lw $t1 -40($fp)
+sne $t0 $t0 $t1
+sw $t0 -44($fp)
+#361
+li $t0 1
+lw $t1 -44($fp)
+bne $t0 $t1 label52 
+#362
+#363
+la $a0 tempVar139
+li $v0 4
+syscall
+#364
+j label53 
+#365
+label52 :
+#366
+label53 :
+#367
+j label49 
+#368
+label51 :
+#369
+li $t0 1
+sw $t0 -48($fp)
+#370
+lw $t0 -16($fp)
+lw $t1 -48($fp)
+seq $t0 $t0 $t1
+sw $t0 -52($fp)
+#371
+li $t0 1
+lw $t1 -52($fp)
+bne $t0 $t1 label54 
+#372
+li $t0 1
+sw $t0 -56($fp)
+#373
+lw $t0 -16($fp)
+lw $t1 -56($fp)
+sne $t0 $t0 $t1
+sw $t0 -60($fp)
+#374
+li $t0 1
+lw $t1 -60($fp)
+bne $t0 $t1 label55 
+#375
+#376
+la $a0 tempVar144
+li $v0 4
+syscall
+#377
+j label56 
+#378
+label55 :
+#379
+label56 :
+#380
+j label49 
+#381
+label54 :
+#382
+li $t0 2
+sw $t0 -64($fp)
+#383
+lw $t0 -16($fp)
+lw $t1 -64($fp)
+seq $t0 $t0 $t1
+sw $t0 -68($fp)
+#384
+li $t0 1
+lw $t1 -68($fp)
+bne $t0 $t1 label57 
+#385
+li $t0 2
+sw $t0 -72($fp)
+#386
+lw $t0 -16($fp)
+lw $t1 -72($fp)
+sne $t0 $t0 $t1
+sw $t0 -76($fp)
+#387
+li $t0 1
+lw $t1 -76($fp)
+bne $t0 $t1 label58 
+#388
+#389
+la $a0 tempVar149
+li $v0 4
+syscall
+#390
+j label59 
+#391
+label58 :
+#392
+label59 :
+#393
+j label49 
+#394
+label57 :
+#395
+j label49 
+#396
+label49 :
+#397
+li $t0 1
+sw $t0 -80($fp)
+#398
+lw $t0 -16($fp)
+lw $t1 -80($fp)
+add $t0 $t0 $t1
+sw $t0 -84($fp)
+#399
+lw $t0 -84($fp)
+sw $t0 -16($fp)
+#400
+j label47 
+#401
+label48 :
+#402
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#403
+label60 :
+#404
+sw $ra -4($fp)
+#405
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label12 
+#406
+sw $v0 -12($fp)
+#407
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label35 
+#408
+sw $v0 -16($fp)
+#409
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label45 
+#410
+sw $v0 -20($fp)
+#411
+#412
+la $a0 tempVar155
+li $v0 4
+syscall
+#413
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#414
+label61 :
+#415
+sw $ra -4($fp)
+#416
+#417
+#418
+#419
+#420
+#421
+#422
+#423
+li $t0 1
+sw $t0 -1148($fp)
+#424
+lw $t0 -1148($fp)
+sw $t0 -12($fp)
+#425
+li $t0 2
+sw $t0 -1152($fp)
+#426
+lw $t0 -1152($fp)
+sw $t0 -16($fp)
+#427
+li $t0 0
+sw $t0 -1156($fp)
+#428
+lw $t0 -1156($fp)
+sw $t0 -112($fp)
+#429
+li $t0 0
+sw $t0 -1160($fp)
+#430
+lw $t0 -1160($fp)
+sw $t0 -112($fp)
+#431
+j label62 
+#432
+label63 :
+#433
+li $t0 23
+sw $t0 -1164($fp)
+#434
+lw $t0 -112($fp)
+lw $t1 -1164($fp)
+slt $t0 $t0 $t1
+sw $t0 -1168($fp)
+#435
+li $t0 1
+lw $t1 -1168($fp)
+bne $t0 $t1 label64 
+#436
+label62 :
+#437
+lw $t0 -112($fp)
+li $t1 -20
+lw $t2 -112($fp)
+li $t3 4
+mul $t2 $t2 $t3
+sub $t1 $t1 $t2
+add $t1 $t1 $fp
+sw $t0 0($t1)
+#438
+li $t0 1
+sw $t0 -1172($fp)
+#439
+lw $t0 -112($fp)
+lw $t1 -1172($fp)
+add $t0 $t0 $t1
+sw $t0 -1176($fp)
+#440
+lw $t0 -1176($fp)
+sw $t0 -112($fp)
+#441
+j label63 
+#442
+label64 :
+#443
+li $t0 97
+sw $t0 -1180($fp)
+#444
+lw $t0 -1180($fp)
+sw $t0 -120($fp)
+#445
+li $t0 127
+sw $t0 -1184($fp)
+#446
+lw $t0 -1184($fp)
+sw $t0 -112($fp)
+#447
+lw $t0 -112($fp)
+sw $t0 -116($fp)
+#448
+li $t0 0
+sw $t0 -1188($fp)
+#449
+lw $t0 -1188($fp)
+sw $t0 -12($fp)
+#450
+li $t0 0
+sw $t0 -1192($fp)
+#451
+lw $t0 -1192($fp)
+sw $t0 -12($fp)
+#452
+j label65 
+#453
+label66 :
+#454
+lw $t0 -12($fp)
+lw $t1 -116($fp)
+slt $t0 $t0 $t1
+sw $t0 -1196($fp)
+#455
+li $t0 1
+lw $t1 -1196($fp)
+bne $t0 $t1 label67 
+#456
+label65 :
+#457
+li $t0 1
+sw $t0 -1200($fp)
+#458
+lw $t0 -12($fp)
+lw $t1 -1200($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -1204($fp)
+#459
+lw $t0 -1204($fp)
+lw $t1 -12($fp)
+sub $t0 $t0 $t1
+sw $t0 -1208($fp)
+#460
+li $t0 1
+sw $t0 -1212($fp)
+#461
+lw $t0 -1208($fp)
+lw $t1 -1212($fp)
+sub $t0 $t0 $t1
+sw $t0 -1216($fp)
+#462
+li $t0 2
+sw $t0 -1220($fp)
+#463
+li $t0 1
+sw $t0 -1224($fp)
+#464
+lw $t0 -1220($fp)
+lw $t1 -1224($fp)
+div $t0 $t0 $t1
+sw $t0 -1228($fp)
+#465
+lw $t0 -1216($fp)
+lw $t1 -1228($fp)
+add $t0 $t0 $t1
+sw $t0 -1232($fp)
+#466
+li $t0 1
+sw $t0 -1236($fp)
+#467
+lw $t0 -1232($fp)
+lw $t1 -1236($fp)
+sub $t0 $t0 $t1
+sw $t0 -1240($fp)
+#468
+lw $t0 -1240($fp)
+sw $t0 -1244($fp)
+#469
+li $t0 2
+sw $t0 -1248($fp)
+#470
+lw $t0 -1244($fp)
+lw $t1 -1248($fp)
+div $t0 $t0 $t1
+sw $t0 -1252($fp)
+#471
+li $t0 97
+sw $t0 -1256($fp)
+#472
+lw $t0 -1256($fp)
+li $t1 -124
+lw $t2 -1252($fp)
+li $t3 4
+mul $t2 $t2 $t3
+sub $t1 $t1 $t2
+add $t1 $t1 $fp
+sw $t0 0($t1)
+#473
+li $t0 1
+sw $t0 -1260($fp)
+#474
+lw $t0 -12($fp)
+lw $t1 -1260($fp)
+add $t0 $t0 $t1
+sw $t0 -1264($fp)
+#475
+lw $t0 -1264($fp)
+sw $t0 -12($fp)
+#476
+j label66 
+#477
+label67 :
+#478
+li $t0 0
+sw $t0 -1268($fp)
+#479
+li $t0 -124
+lw $t1 -1268($fp)
+li $t2 4
+mul $t1 $t1 $t2
+sub $t0 $t0 $t1
+add $t0 $t0 $fp
+lw $t0 0($t0)
+sw $t0 -1272($fp)
+#480
+li $t0 97
+sw $t0 -1276($fp)
+#481
+lw $t0 -1272($fp)
+lw $t1 -1276($fp)
+seq $t0 $t0 $t1
+sw $t0 -1280($fp)
+#482
+li $t0 1
+lw $t1 -1280($fp)
+bne $t0 $t1 label68 
+#483
+#484
+la $a0 tempVar190
+li $v0 4
+syscall
+#485
+j label69 
+#486
+label68 :
+#487
+label69 :
+#488
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#489
+label70 :
+#490
+sw $ra -4($fp)
+#491
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label61 
+#492
+sw $v0 -12($fp)
+#493
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#494
+label71 :
+#495
+sw $ra -4($fp)
+#496
+#497
+label73 :
+#498
+li $t0 0
+sw $t0 -16($fp)
+#499
+lw $t0 -12($fp)
+lw $t1 -16($fp)
+seq $t0 $t0 $t1
+sw $t0 -20($fp)
+#500
+li $t0 1
+lw $t1 -20($fp)
+bne $t0 $t1 label74 
+#501
+li $t0 0
+sw $t0 -24($fp)
+#502
+lw $t0 -24($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#503
+j label72 
+#504
+label74 :
+#505
+li $t0 1
+sw $t0 -28($fp)
+#506
+lw $t0 -12($fp)
+lw $t1 -28($fp)
+seq $t0 $t0 $t1
+sw $t0 -32($fp)
+#507
+li $t0 1
+lw $t1 -32($fp)
+bne $t0 $t1 label75 
+#508
+li $t0 1
+sw $t0 -36($fp)
+#509
+lw $t0 -36($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#510
+j label72 
+#511
+label75 :
+#512
+li $t0 2
+sw $t0 -40($fp)
+#513
+lw $t0 -12($fp)
+lw $t1 -40($fp)
+seq $t0 $t0 $t1
+sw $t0 -44($fp)
+#514
+li $t0 1
+lw $t1 -44($fp)
+bne $t0 $t1 label76 
+#515
+li $t0 1
+sw $t0 -48($fp)
+#516
+lw $t0 -48($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#517
+j label72 
+#518
+label76 :
+#519
+j label72 
+#520
+label72 :
+#521
+li $t0 1
+sw $t0 -52($fp)
+#522
+lw $t0 -12($fp)
+lw $t1 -52($fp)
+sub $t0 $t0 $t1
+sw $t0 -56($fp)
+#523
+#524
+lw $t0 -56($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label71 
+#525
+sw $v0 -60($fp)
+#526
+lw $t0 -60($fp)
+sw $t0 -64($fp)
+#527
+li $t0 2
+sw $t0 -68($fp)
+#528
+lw $t0 -12($fp)
+lw $t1 -68($fp)
+sub $t0 $t0 $t1
+sw $t0 -72($fp)
+#529
+#530
+lw $t0 -72($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label71 
+#531
+sw $v0 -76($fp)
+#532
+lw $t0 -76($fp)
+sw $t0 -80($fp)
+#533
+lw $t0 -64($fp)
+lw $t1 -80($fp)
+add $t0 $t0 $t1
+sw $t0 -84($fp)
+#534
+lw $t0 -84($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#535
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#536
+label77 :
+#537
+sw $ra -4($fp)
+#538
+#539
+#540
+la $a0 tempVar210
+li $v0 4
+syscall
+#541
+li $v0 5
+syscall
+sw $v0 -12($fp)
+#542
+lw $t0 -12($fp)
+sw $t0 -12($fp)
+#543
+j label78 
+#544
+label79 :
+#545
+li $t0 0
+sw $t0 -16($fp)
+#546
+lw $t0 -12($fp)
+lw $t1 -16($fp)
+slt $t0 $t0 $t1
+sw $t0 -20($fp)
+#547
+li $t0 1
+lw $t1 -20($fp)
+bne $t0 $t1 label80 
+#548
+label78 :
+#549
+li $t0 0
+sw $t0 -24($fp)
+#550
+lw $t0 -12($fp)
+lw $t1 -24($fp)
+slt $t0 $t0 $t1
+sw $t0 -28($fp)
+#551
+li $t0 1
+lw $t1 -28($fp)
+bne $t0 $t1 label81 
+#552
+#553
+la $a0 tempVar215
+li $v0 4
+syscall
+#554
+li $v0 5
+syscall
+sw $v0 -12($fp)
+#555
+j label82 
+#556
+label81 :
+#557
+label82 :
+#558
+li $t0 0
+sw $t0 -32($fp)
+#559
+lw $t0 -12($fp)
+lw $t1 -32($fp)
+sle $t0 $t1 $t0
+sw $t0 -36($fp)
+#560
+li $t0 1
+lw $t1 -36($fp)
+bne $t0 $t1 label83 
+#561
+#562
+la $a0 tempVar218
+li $v0 4
+syscall
+#563
+#564
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label71 
+#565
+sw $v0 -40($fp)
+#566
+lw $t0 -40($fp)
+sw $t0 -44($fp)
+#567
+lw $t0 -44($fp)
+sw $t0 -48($fp)
+#568
+lw $a0 -48($fp)
+li $v0 1
+syscall
+#569
+j label84 
+#570
+label83 :
+#571
+label84 :
+#572
+li $t0 1
+sw $t0 -52($fp)
+#573
+lw $t0 -12($fp)
+lw $t1 -52($fp)
+sub $t0 $t0 $t1
+sw $t0 -56($fp)
+#574
+lw $t0 -56($fp)
+sw $t0 -12($fp)
+#575
+li $t0 1
+sw $t0 -60($fp)
+#576
+lw $t0 -12($fp)
+lw $t1 -60($fp)
+add $t0 $t0 $t1
+sw $t0 -64($fp)
+#577
+lw $t0 -64($fp)
+sw $t0 -12($fp)
+#578
+j label79 
+#579
+label80 :
+#580
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#581
+label85 :
+#582
+sw $ra -4($fp)
+#583
+#584
+#585
+lw $t0 -12($fp)
+lw $t1 -16($fp)
+div $t0 $t0 $t1
+sw $t0 -20($fp)
+#586
+lw $t0 -20($fp)
+lw $t1 -16($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -24($fp)
+#587
+lw $t0 -12($fp)
+lw $t1 -24($fp)
+sub $t0 $t0 $t1
+sw $t0 -28($fp)
+#588
+lw $t0 -28($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#589
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#590
+label86 :
+#591
+sw $ra -4($fp)
+#592
+#593
+#594
+#595
+li $t0 0
+sw $t0 -24($fp)
+#596
+lw $t0 -24($fp)
+sw $t0 -20($fp)
+#597
+li $t0 0
+sw $t0 -28($fp)
+#598
+lw $t0 -12($fp)
+lw $t1 -28($fp)
+seq $t0 $t0 $t1
+sw $t0 -32($fp)
+#599
+li $t0 1
+lw $t1 -32($fp)
+bne $t0 $t1 label87 
+#600
+lw $t0 -16($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#601
+j label88 
+#602
+label87 :
+#603
+label88 :
+#604
+li $t0 0
+sw $t0 -36($fp)
+#605
+lw $t0 -16($fp)
+lw $t1 -36($fp)
+seq $t0 $t0 $t1
+sw $t0 -40($fp)
+#606
+li $t0 1
+lw $t1 -40($fp)
+bne $t0 $t1 label89 
+#607
+lw $t0 -12($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#608
+j label90 
+#609
+label89 :
+#610
+label90 :
+#611
+#612
+#613
+#614
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label85 
+#615
+sw $v0 -44($fp)
+#616
+lw $t0 -44($fp)
+sw $t0 -48($fp)
+#617
+#618
+lw $t0 -16($fp)
+sw $t0 -12($sp)
+lw $t0 -48($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label86 
+#619
+sw $v0 -52($fp)
+#620
+lw $t0 -52($fp)
+sw $t0 -56($fp)
+#621
+lw $t0 -56($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#622
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#623
+label91 :
+#624
+sw $ra -4($fp)
+#625
+#626
+#627
+li $t0 0
+sw $t0 -20($fp)
+#628
+lw $t0 -12($fp)
+lw $t1 -20($fp)
+sle $t0 $t0 $t1
+sw $t0 -24($fp)
+#629
+li $t0 1
+lw $t1 -24($fp)
+bne $t0 $t1 label92 
+#630
+li $t0 1
+sw $t0 -28($fp)
+#631
+lw $t0 -28($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#632
+j label93 
+#633
+label92 :
+#634
+label93 :
+#635
+li $t0 0
+sw $t0 -32($fp)
+#636
+lw $t0 -16($fp)
+lw $t1 -32($fp)
+sle $t0 $t0 $t1
+sw $t0 -36($fp)
+#637
+li $t0 1
+lw $t1 -36($fp)
+bne $t0 $t1 label94 
+#638
+li $t0 1
+sw $t0 -40($fp)
+#639
+lw $t0 -40($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#640
+j label95 
+#641
+label94 :
+#642
+label95 :
+#643
+li $t0 0
+sw $t0 -44($fp)
+#644
+lw $t0 -44($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#645
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#646
+label96 :
+#647
+sw $ra -4($fp)
+#648
+#649
+#650
+#651
+la $a0 tempVar245
+li $v0 4
+syscall
+#652
+li $v0 5
+syscall
+sw $v0 -12($fp)
+#653
+li $v0 5
+syscall
+sw $v0 -16($fp)
+#654
+#655
+#656
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label91 
+#657
+sw $v0 -20($fp)
+#658
+lw $t0 -20($fp)
+sw $t0 -24($fp)
+#659
+li $t0 0
+sw $t0 -28($fp)
+#660
+lw $t0 -24($fp)
+lw $t1 -28($fp)
+sne $t0 $t0 $t1
+sw $t0 -32($fp)
+#661
+li $t0 1
+lw $t1 -32($fp)
+bne $t0 $t1 label97 
+#662
+lw $t0 -12($fp)
+sw $t0 -12($fp)
+#663
+j label99 
+#664
+label100 :
+#665
+#666
+#667
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label91 
+#668
+sw $v0 -36($fp)
+#669
+lw $t0 -36($fp)
+sw $t0 -40($fp)
+#670
+li $t0 0
+sw $t0 -44($fp)
+#671
+lw $t0 -40($fp)
+lw $t1 -44($fp)
+sne $t0 $t0 $t1
+sw $t0 -48($fp)
+#672
+li $t0 1
+lw $t1 -48($fp)
+bne $t0 $t1 label101 
+#673
+label99 :
+#674
+#675
+la $a0 tempVar254
+li $v0 4
+syscall
+#676
+li $v0 5
+syscall
+sw $v0 -12($fp)
+#677
+li $v0 5
+syscall
+sw $v0 -16($fp)
+#678
+li $t0 1
+sw $t0 -52($fp)
+#679
+lw $t0 -12($fp)
+lw $t1 -52($fp)
+sub $t0 $t0 $t1
+sw $t0 -56($fp)
+#680
+lw $t0 -56($fp)
+sw $t0 -12($fp)
+#681
+li $t0 1
+sw $t0 -60($fp)
+#682
+lw $t0 -12($fp)
+lw $t1 -60($fp)
+add $t0 $t0 $t1
+sw $t0 -64($fp)
+#683
+lw $t0 -64($fp)
+sw $t0 -12($fp)
+#684
+j label100 
+#685
+label101 :
+#686
+j label98 
+#687
+label97 :
+#688
+label98 :
+#689
+#690
+la $a0 tempVar259
+li $v0 4
+syscall
+#691
+#692
+#693
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label86 
+#694
+sw $v0 -68($fp)
+#695
+lw $t0 -68($fp)
+sw $t0 -72($fp)
+#696
+lw $t0 -72($fp)
+sw $t0 -76($fp)
+#697
+lw $a0 -76($fp)
+li $v0 1
+syscall
+#698
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#699
+label102 :
+#700
+sw $ra -4($fp)
+#701
+#702
+#703
+li $t0 2
+sw $t0 -20($fp)
+#704
+lw $t0 -20($fp)
+sw $t0 -16($fp)
+#705
+li $t0 2
+sw $t0 -24($fp)
+#706
+lw $t0 -12($fp)
+lw $t1 -24($fp)
+seq $t0 $t0 $t1
+sw $t0 -28($fp)
+#707
+li $t0 1
+lw $t1 -28($fp)
+bne $t0 $t1 label103 
+#708
+li $t0 1
+sw $t0 -32($fp)
+#709
+lw $t0 -32($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#710
+j label104 
+#711
+label103 :
+#712
+label104 :
+#713
+li $t0 2
+sw $t0 -36($fp)
+#714
+lw $t0 -36($fp)
+sw $t0 -16($fp)
+#715
+j label105 
+#716
+label106 :
+#717
+lw $t0 -16($fp)
+lw $t1 -16($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -40($fp)
+#718
+lw $t0 -40($fp)
+lw $t1 -12($fp)
+sle $t0 $t0 $t1
+sw $t0 -44($fp)
+#719
+li $t0 1
+lw $t1 -44($fp)
+bne $t0 $t1 label107 
+#720
+label105 :
+#721
+#722
+#723
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label85 
+#724
+sw $v0 -48($fp)
+#725
+lw $t0 -48($fp)
+sw $t0 -52($fp)
+#726
+li $t0 0
+sw $t0 -56($fp)
+#727
+lw $t0 -52($fp)
+lw $t1 -56($fp)
+seq $t0 $t0 $t1
+sw $t0 -60($fp)
+#728
+li $t0 1
+lw $t1 -60($fp)
+bne $t0 $t1 label108 
+#729
+li $t0 0
+sw $t0 -64($fp)
+#730
+lw $t0 -64($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#731
+j label109 
+#732
+label108 :
+#733
+label109 :
+#734
+li $t0 1
+sw $t0 -68($fp)
+#735
+lw $t0 -16($fp)
+lw $t1 -68($fp)
+add $t0 $t0 $t1
+sw $t0 -72($fp)
+#736
+lw $t0 -72($fp)
+sw $t0 -16($fp)
+#737
+j label106 
+#738
+label107 :
+#739
+li $t0 1
+sw $t0 -76($fp)
+#740
+lw $t0 -76($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#741
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#742
+label110 :
+#743
+sw $ra -4($fp)
+#744
+#745
+#746
+#747
+li $t0 2
+sw $t0 -24($fp)
+#748
+lw $t0 -24($fp)
+sw $t0 -16($fp)
+#749
+li $t0 0
+sw $t0 -28($fp)
+#750
+lw $t0 -28($fp)
+sw $t0 -20($fp)
+#751
+li $t0 1
+sw $t0 -32($fp)
+#752
+lw $t0 -12($fp)
+lw $t1 -32($fp)
+seq $t0 $t0 $t1
+sw $t0 -36($fp)
+#753
+li $t0 1
+lw $t1 -36($fp)
+bne $t0 $t1 label111 
+#754
+#755
+la $a0 tempVar282
+li $v0 4
+syscall
+#756
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#757
+j label112 
+#758
+label111 :
+#759
+label112 :
+#760
+li $t0 2
+sw $t0 -40($fp)
+#761
+lw $t0 -40($fp)
+sw $t0 -16($fp)
+#762
+j label113 
+#763
+label114 :
+#764
+lw $t0 -16($fp)
+lw $t1 -16($fp)
+mul $t0 $t0 $t1
+subi $sp $sp 4
+sw $t0 -44($fp)
+#765
+lw $t0 -44($fp)
+lw $t1 -12($fp)
+sle $t0 $t0 $t1
+sw $t0 -48($fp)
+#766
+li $t0 1
+lw $t1 -48($fp)
+bne $t0 $t1 label115 
+#767
+label113 :
+#768
+#769
+lw $t0 -16($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label102 
+#770
+sw $v0 -52($fp)
+#771
+lw $t0 -52($fp)
+sw $t0 -56($fp)
+#772
+li $t0 1
+sw $t0 -60($fp)
+#773
+lw $t0 -56($fp)
+lw $t1 -60($fp)
+seq $t0 $t0 $t1
+sw $t0 -64($fp)
+#774
+li $t0 1
+lw $t1 -64($fp)
+bne $t0 $t1 label116 
+#775
+#776
+#777
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label85 
+#778
+sw $v0 -68($fp)
+#779
+lw $t0 -68($fp)
+sw $t0 -72($fp)
+#780
+li $t0 0
+sw $t0 -76($fp)
+#781
+lw $t0 -72($fp)
+lw $t1 -76($fp)
+seq $t0 $t0 $t1
+sw $t0 -80($fp)
+#782
+li $t0 1
+lw $t1 -80($fp)
+bne $t0 $t1 label118 
+#783
+lw $t0 -12($fp)
+sw $t0 -12($fp)
+#784
+j label120 
+#785
+label121 :
+#786
+#787
+#788
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+lw $t0 -16($fp)
+sw $t0 -16($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label85 
+#789
+sw $v0 -84($fp)
+#790
+lw $t0 -84($fp)
+sw $t0 -88($fp)
+#791
+li $t0 0
+sw $t0 -92($fp)
+#792
+lw $t0 -88($fp)
+lw $t1 -92($fp)
+seq $t0 $t0 $t1
+sw $t0 -96($fp)
+#793
+li $t0 1
+lw $t1 -96($fp)
+bne $t0 $t1 label122 
+#794
+label120 :
+#795
+lw $t0 -12($fp)
+lw $t1 -16($fp)
+div $t0 $t0 $t1
+sw $t0 -100($fp)
+#796
+lw $t0 -100($fp)
+sw $t0 -12($fp)
+#797
+li $t0 1
+sw $t0 -104($fp)
+#798
+lw $t0 -20($fp)
+lw $t1 -104($fp)
+seq $t0 $t0 $t1
+sw $t0 -108($fp)
+#799
+li $t0 1
+lw $t1 -108($fp)
+bne $t0 $t1 label123 
+#800
+#801
+la $a0 tempVar301
+li $v0 4
+syscall
+#802
+j label124 
+#803
+label123 :
+#804
+label124 :
+#805
+li $t0 1
+sw $t0 -112($fp)
+#806
+lw $t0 -112($fp)
+sw $t0 -20($fp)
+#807
+lw $t0 -16($fp)
+sw $t0 -116($fp)
+#808
+lw $a0 -116($fp)
+li $v0 1
+syscall
+#809
+li $t0 1
+sw $t0 -120($fp)
+#810
+lw $t0 -12($fp)
+lw $t1 -120($fp)
+sub $t0 $t0 $t1
+sw $t0 -124($fp)
+#811
+lw $t0 -124($fp)
+sw $t0 -12($fp)
+#812
+li $t0 1
+sw $t0 -128($fp)
+#813
+lw $t0 -12($fp)
+lw $t1 -128($fp)
+add $t0 $t0 $t1
+sw $t0 -132($fp)
+#814
+lw $t0 -132($fp)
+sw $t0 -12($fp)
+#815
+j label121 
+#816
+label122 :
+#817
+j label119 
+#818
+label118 :
+#819
+label119 :
+#820
+j label117 
+#821
+label116 :
+#822
+label117 :
+#823
+li $t0 1
+sw $t0 -136($fp)
+#824
+lw $t0 -16($fp)
+lw $t1 -136($fp)
+add $t0 $t0 $t1
+sw $t0 -140($fp)
+#825
+lw $t0 -140($fp)
+sw $t0 -16($fp)
+#826
+j label114 
+#827
+label115 :
+#828
+li $t0 1
+sw $t0 -144($fp)
+#829
+lw $t0 -12($fp)
+lw $t1 -144($fp)
+sne $t0 $t0 $t1
+sw $t0 -148($fp)
+#830
+li $t0 1
+lw $t1 -148($fp)
+bne $t0 $t1 label125 
+#831
+li $t0 1
+sw $t0 -152($fp)
+#832
+lw $t0 -20($fp)
+lw $t1 -152($fp)
+seq $t0 $t0 $t1
+sw $t0 -156($fp)
+#833
+li $t0 1
+lw $t1 -156($fp)
+bne $t0 $t1 label127 
+#834
+#835
+la $a0 tempVar314
+li $v0 4
+syscall
+#836
+j label128 
+#837
+label127 :
+#838
+label128 :
+#839
+lw $t0 -12($fp)
+sw $t0 -160($fp)
+#840
+lw $a0 -160($fp)
+li $v0 1
+syscall
+#841
+j label126 
+#842
+label125 :
+#843
+label126 :
+#844
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#845
+label129 :
+#846
+sw $ra -4($fp)
+#847
+#848
+#849
+la $a0 tempVar316
+li $v0 4
+syscall
+#850
+li $v0 5
+syscall
+sw $v0 -12($fp)
+#851
+lw $t0 -12($fp)
+sw $t0 -12($fp)
+#852
+j label130 
+#853
+label131 :
+#854
+li $t0 0
+sw $t0 -16($fp)
+#855
+lw $t0 -12($fp)
+lw $t1 -16($fp)
+slt $t0 $t0 $t1
+sw $t0 -20($fp)
+#856
+li $t0 1
+lw $t1 -20($fp)
+bne $t0 $t1 label132 
+#857
+label130 :
+#858
+li $t0 0
+sw $t0 -24($fp)
+#859
+lw $t0 -12($fp)
+lw $t1 -24($fp)
+slt $t0 $t0 $t1
+sw $t0 -28($fp)
+#860
+li $t0 1
+lw $t1 -28($fp)
+bne $t0 $t1 label133 
+#861
+#862
+la $a0 tempVar321
+li $v0 4
+syscall
+#863
+li $v0 5
+syscall
+sw $v0 -12($fp)
+#864
+j label134 
+#865
+label133 :
+#866
+label134 :
+#867
+li $t0 1
+sw $t0 -32($fp)
+#868
+lw $t0 -12($fp)
+lw $t1 -32($fp)
+sub $t0 $t0 $t1
+sw $t0 -36($fp)
+#869
+lw $t0 -36($fp)
+sw $t0 -12($fp)
+#870
+li $t0 1
+sw $t0 -40($fp)
+#871
+lw $t0 -12($fp)
+lw $t1 -40($fp)
+add $t0 $t0 $t1
+sw $t0 -44($fp)
+#872
+lw $t0 -44($fp)
+sw $t0 -12($fp)
+#873
+j label131 
+#874
+label132 :
+#875
+#876
+la $a0 tempVar326
+li $v0 4
+syscall
+#877
+#878
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label110 
+#879
+sw $v0 -48($fp)
+#880
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#881
+label135 :
+#882
+sw $ra -4($fp)
+#883
+#884
+li $t0 69
+sw $t0 -16($fp)
+#885
+lw $t0 -16($fp)
+lw $t1 -12($fp)
+seq $t0 $t0 $t1
+sw $t0 -20($fp)
+#886
+li $t0 1
+lw $t1 -20($fp)
+bne $t0 $t1 label136 
+#887
+li $t0 0
+sw $t0 -24($fp)
+#888
+lw $t0 -24($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#889
+j label137 
+#890
+label136 :
+#891
+label137 :
+#892
+li $t0 77
+sw $t0 -28($fp)
+#893
+lw $t0 -28($fp)
+lw $t1 -12($fp)
+seq $t0 $t0 $t1
+sw $t0 -32($fp)
+#894
+li $t0 1
+lw $t1 -32($fp)
+bne $t0 $t1 label138 
+#895
+li $t0 0
+sw $t0 -36($fp)
+#896
+lw $t0 -36($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#897
+j label139 
+#898
+label138 :
+#899
+label139 :
+#900
+li $t0 72
+sw $t0 -40($fp)
+#901
+lw $t0 -40($fp)
+lw $t1 -12($fp)
+seq $t0 $t0 $t1
+sw $t0 -44($fp)
+#902
+li $t0 1
+lw $t1 -44($fp)
+bne $t0 $t1 label140 
+#903
+li $t0 0
+sw $t0 -48($fp)
+#904
+lw $t0 -48($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#905
+j label141 
+#906
+label140 :
+#907
+label141 :
+#908
+li $t0 1
+sw $t0 -52($fp)
+#909
+lw $t0 -52($fp)
+move $v0 $t0
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#910
+lw $ra -4($fp)
+move $sp $fp
+lw $fp -8($fp)
+jr $ra
+#911
+label142 :
+#912
+sw $ra -4($fp)
+add $fp $sp $0
+subi $sp $sp 8000
+#913
+#914
+#915
+la $a0 tempVar338
+li $v0 4
+syscall
+#916
+li $v0 12
+syscall
+sw $v0 -12($fp)
+#917
+#918
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label135 
+#919
+sw $v0 -16($fp)
+#920
+lw $t0 -16($fp)
+sw $t0 -20($fp)
+#921
+li $t0 0
+sw $t0 -24($fp)
+#922
+lw $t0 -20($fp)
+lw $t1 -24($fp)
+sne $t0 $t0 $t1
+sw $t0 -28($fp)
+#923
+li $t0 1
+lw $t1 -28($fp)
+bne $t0 $t1 label143 
+#924
+lw $t0 -12($fp)
+sw $t0 -12($fp)
+#925
+j label145 
+#926
+label146 :
+#927
+#928
+lw $t0 -12($fp)
+sw $t0 -12($sp)
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label135 
+#929
+sw $v0 -32($fp)
+#930
+lw $t0 -32($fp)
+sw $t0 -36($fp)
+#931
+li $t0 0
+sw $t0 -40($fp)
+#932
+lw $t0 -36($fp)
+lw $t1 -40($fp)
+sne $t0 $t0 $t1
+sw $t0 -44($fp)
+#933
+li $t0 1
+lw $t1 -44($fp)
+bne $t0 $t1 label147 
+#934
+label145 :
+#935
+#936
+la $a0 tempVar347
+li $v0 4
+syscall
+#937
+li $v0 12
+syscall
+sw $v0 -12($fp)
+#938
+li $t0 1
+sw $t0 -48($fp)
+#939
+lw $t0 -12($fp)
+lw $t1 -48($fp)
+sub $t0 $t0 $t1
+sw $t0 -52($fp)
+#940
+lw $t0 -52($fp)
+sw $t0 -12($fp)
+#941
+li $t0 1
+sw $t0 -56($fp)
+#942
+lw $t0 -12($fp)
+lw $t1 -56($fp)
+add $t0 $t0 $t1
+sw $t0 -60($fp)
+#943
+lw $t0 -60($fp)
+sw $t0 -12($fp)
+#944
+j label146 
+#945
+label147 :
+#946
+lw $t0 -12($fp)
+sw $t0 -64($fp)
+#947
+lw $a0 -64($fp)
+li $v0 11
+syscall
+#948
+j label144 
+#949
+label143 :
+#950
+label144 :
+#951
+label149 :
+#952
+li $t0 69
+sw $t0 -68($fp)
+#953
+lw $t0 -12($fp)
+lw $t1 -68($fp)
+seq $t0 $t0 $t1
+sw $t0 -72($fp)
+#954
+li $t0 1
+lw $t1 -72($fp)
+bne $t0 $t1 label150 
+#955
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label5 
+#956
+sw $v0 -76($fp)
+#957
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label7 
+#958
+sw $v0 -80($fp)
+#959
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label77 
+#960
+sw $v0 -84($fp)
+#961
+j label148 
+#962
+label150 :
+#963
+li $t0 77
+sw $t0 -88($fp)
+#964
+lw $t0 -12($fp)
+lw $t1 -88($fp)
+seq $t0 $t0 $t1
+sw $t0 -92($fp)
+#965
+li $t0 1
+lw $t1 -92($fp)
+bne $t0 $t1 label151 
+#966
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label11 
+#967
+sw $v0 -96($fp)
+#968
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label60 
+#969
+sw $v0 -100($fp)
+#970
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label9 
+#971
+sw $v0 -104($fp)
+#972
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label96 
+#973
+sw $v0 -108($fp)
+#974
+j label148 
+#975
+label151 :
+#976
+li $t0 72
+sw $t0 -112($fp)
+#977
+lw $t0 -12($fp)
+lw $t1 -112($fp)
+seq $t0 $t0 $t1
+sw $t0 -116($fp)
+#978
+li $t0 1
+lw $t1 -116($fp)
+bne $t0 $t1 label152 
+#979
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label5 
+#980
+sw $v0 -120($fp)
+#981
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label7 
+#982
+sw $v0 -124($fp)
+#983
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label11 
+#984
+sw $v0 -128($fp)
+#985
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label60 
+#986
+sw $v0 -132($fp)
+#987
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label9 
+#988
+sw $v0 -136($fp)
+#989
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label70 
+#990
+sw $v0 -140($fp)
+#991
+sw $fp -8($sp)
+add $fp $sp $0
+subi $sp $sp 4000
+jal label129 
+#992
+sw $v0 -144($fp)
+#993
+j label148 
+#994
+label152 :
+#995
+j label148 
+#996
+label148 :
+#997
+j label153 
+#998
+j label153 
+#999
+label153 :

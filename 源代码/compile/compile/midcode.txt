@@ -1,0 +1,999 @@
+int,cst1,1,14
+int,cst2,2,14
+int,cst3,3,14
+char,csta,97,15
+char,cstb,98,15
+char,cstc,99,15
+var,int,g_a,10
+var,int,g_b,10
+int,g_arr,2048,12
+char,g_stra,1024,13
+char,g_strb,2048,13
+label0 , , ,43
+void,const_define,label0 ,3
+int,a,1,14
+int,b,0,14
+int,c,-1,14
+char,cst23,120,15
+char,cst24,122,15
+char,constA0,65,15
+char,cstA1,49,15
+char,cst_div,47,15
+tempVar0,equal,a,29
+printf,tempVar0,int,41
+tempVar1,equal,cst_div,29
+printf,tempVar1,char,45
+RET, , ,9
+label1 , , ,43
+void,const_define_test,label1 ,3
+call,const_define,label0 ,47
+tempVar2,equal,RET,44
+RET, , ,9
+label2 , , ,43
+void,var_define,label2 ,3
+var,int,a,10
+int,arr,1,12
+var,int,_a,10
+int,_arr,2,12
+var,int,a1,10
+int,arr1,3,12
+var,char,b,11
+char,strb,1,13
+var,char,_b,11
+char,_bstr,2,13
+var,char,_b1,11
+char,_bstr1,3,13
+var,int,c,10
+var,char,z,10
+RET, , ,9
+label3 , , ,43
+void,var_define_test,label3 ,3
+call,var_define,label2 ,47
+tempVar3,equal,RET,44
+RET, , ,9
+label4 , , ,43
+void,define,label4 ,3
+int,int1,1,14
+char,cst24,122,15
+char,constA0,65,15
+var,int,val1,10
+var,char,b,11
+char,strb,1,13
+RET, , ,9
+label5 , , ,43
+void,define_test,label5 ,3
+call,var_define_test,label3 ,47
+tempVar4,equal,RET,44
+call,const_define_test,label1 ,47
+tempVar5,equal,RET,44
+call,define,label4 ,47
+tempVar6,equal,RET,44
+tempVar7,equal,define test passed,48
+printf,tempVar7,string,42
+RET, , ,9
+label6 , , ,43
+void,operator,label6 ,3
+var,int,a,10
+var,int,b,10
+var,int,c,10
+var,int,d,10
+var,int,e,10
+var,int,f,10
+tempVar8,equal,1,40
+a,equal,tempVar8,29
+tempVar9,equal,1,40
+tempVar10,equal,2,40
+tempVar11,tempVar9,tempVar10,16
+b,equal,tempVar11,29
+tempVar12,equal,3,40
+tempVar13,equal,1,40
+tempVar14,tempVar12,tempVar13,18
+c,equal,tempVar14,29
+tempVar15,equal,4,40
+tempVar16,equal,0,40
+tempVar17,tempVar16,tempVar15,17
+d,equal,tempVar17,29
+tempVar18,equal,5,40
+e,equal,tempVar18,29
+tempVar19,equal,6,40
+f,equal,tempVar19,29
+tempVar20,equal,3,40
+tempVar21,b,tempVar20,18
+tempVar22,equal,tempVar21,29
+tempVar23,tempVar22,c,16
+tempVar24,equal,4,40
+tempVar25,d,tempVar24,19
+tempVar26,tempVar23,tempVar25,17
+tempVar27,a,a,19
+tempVar28,tempVar26,tempVar27,16
+a,equal,tempVar28,29
+tempVar29,equal,0,40
+tempVar30,tempVar29,a,16
+tempVar31,equal,3,40
+tempVar32,a,tempVar31,18
+tempVar33,equal,tempVar32,29
+tempVar34,tempVar30,tempVar33,16
+tempVar35,tempVar34,c,16
+tempVar36,equal,4,40
+tempVar37,d,tempVar36,19
+tempVar38,tempVar35,tempVar37,17
+tempVar39,e,f,18
+tempVar40,tempVar38,tempVar39,16
+b,equal,tempVar40,29
+tempVar41,equal,a,29
+tempVar42,equal,0,40
+tempVar43,tempVar42,tempVar41,17
+tempVar44,equal,0,40
+tempVar45,b,tempVar44,18
+tempVar46,tempVar43,tempVar45,16
+tempVar47,equal,1,40
+tempVar48,equal,0,40
+tempVar49,tempVar47,tempVar48,17
+tempVar50,equal,tempVar49,29
+tempVar51,tempVar46,tempVar50,17
+e,equal,tempVar51,29
+RET, , ,9
+label7 , , ,43
+void,operator_test,label7 ,3
+call,operator,label6 ,47
+tempVar52,equal,RET,44
+tempVar53,equal,operator test passed,48
+printf,tempVar53,string,42
+RET, , ,9
+label8 , , ,43
+void,string,label8 ,3
+tempVar54,equal,ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz,48
+printf,tempVar54,string,42
+tempVar55,equal,!#$%&'()*+,-./:;<=>?@[]^_`{|}~,48
+printf,tempVar55,string,42
+RET, , ,9
+label9 , , ,43
+void,string_test,label9 ,3
+call,string,label8 ,47
+tempVar56,equal,RET,44
+RET, , ,9
+label10 , , ,43
+void,dowhile,label10 ,3
+var,int,i,10
+tempVar57,equal,100,40
+i,equal,tempVar57,29
+tempVar58,equal,dowhile test passed,48
+printf,tempVar58,string,42
+RET, , ,9
+label11 , , ,43
+void,dowhile_test,label11 ,3
+call,dowhile,label10 ,47
+tempVar59,equal,RET,44
+RET, , ,9
+label12 , , ,43
+void,ifcondition,label12 ,3
+var,int,a,10
+var,int,rightnumber,10
+tempVar60,equal,1,40
+a,equal,tempVar60,29
+tempVar61,equal,0,40
+rightnumber,equal,tempVar61,29
+tempVar62,equal,1,40
+tempVar63,a,tempVar62,25
+BZ,tempVar63,label13 ,28
+tempVar64,equal,1,40
+tempVar65,rightnumber,tempVar64,16
+rightnumber,equal,tempVar65,29
+GOTO,label14 , ,26
+label13 , , ,43
+label14 , , ,43
+tempVar66,equal,2,40
+a,equal,tempVar66,29
+tempVar67,equal,1,40
+tempVar68,a,tempVar67,22
+BZ,tempVar68,label15 ,28
+tempVar69,equal,1,40
+tempVar70,rightnumber,tempVar69,16
+rightnumber,equal,tempVar70,29
+GOTO,label16 , ,26
+label15 , , ,43
+label16 , , ,43
+tempVar71,equal,0,40
+a,equal,tempVar71,29
+tempVar72,equal,1,40
+tempVar73,a,tempVar72,20
+BZ,tempVar73,label17 ,28
+tempVar74,equal,1,40
+tempVar75,rightnumber,tempVar74,16
+rightnumber,equal,tempVar75,29
+GOTO,label18 , ,26
+label17 , , ,43
+label18 , , ,43
+tempVar76,equal,1,40
+tempVar77,a,tempVar76,24
+BZ,tempVar77,label19 ,28
+tempVar78,equal,1,40
+tempVar79,rightnumber,tempVar78,16
+rightnumber,equal,tempVar79,29
+GOTO,label20 , ,26
+label19 , , ,43
+label20 , , ,43
+tempVar80,equal,0,40
+tempVar81,a,tempVar80,23
+BZ,tempVar81,label21 ,28
+tempVar82,equal,1,40
+tempVar83,rightnumber,tempVar82,16
+rightnumber,equal,tempVar83,29
+GOTO,label22 , ,26
+label21 , , ,43
+label22 , , ,43
+tempVar84,equal,0,40
+tempVar85,a,tempVar84,21
+BZ,tempVar85,label23 ,28
+tempVar86,equal,1,40
+tempVar87,rightnumber,tempVar86,16
+rightnumber,equal,tempVar87,29
+GOTO,label24 , ,26
+label23 , , ,43
+label24 , , ,43
+tempVar88,equal,1,40
+tempVar89,equal,1,40
+tempVar90,tempVar88,tempVar89,16
+tempVar91,equal,1,40
+tempVar92,tempVar90,tempVar91,16
+tempVar93,equal,1,40
+tempVar94,equal,3,40
+tempVar95,tempVar93,tempVar94,18
+tempVar96,tempVar92,tempVar95,16
+tempVar97,equal,tempVar96,29
+tempVar98,rightnumber,tempVar97,24
+BZ,tempVar98,label25 ,28
+tempVar99,equal,ifcondition clause error!,48
+printf,tempVar99,string,42
+GOTO,label26 , ,26
+label25 , , ,43
+label26 , , ,43
+tempVar100,rightnumber,rightnumber,24
+BZ,tempVar100,label27 ,28
+tempVar101,equal,ifcondition clause error,48
+printf,tempVar101,string,42
+GOTO,label28 , ,26
+label27 , , ,43
+label28 , , ,43
+RET, , ,9
+label29 , , ,43
+int,switchcodintionans,label29 ,1
+para,int,x,5
+label31 , , ,43
+tempVar102,equal,1,40
+tempVar103,x,tempVar102,25
+BZ,tempVar103,label32 ,28
+tempVar104,equal,2,40
+RET,tempVar104, ,9
+GOTO,label30 , ,26
+label32 , , ,43
+tempVar105,equal,2,40
+tempVar106,x,tempVar105,25
+BZ,tempVar106,label33 ,28
+tempVar107,equal,3,40
+RET,tempVar107, ,9
+GOTO,label30 , ,26
+label33 , , ,43
+tempVar108,equal,3,40
+tempVar109,x,tempVar108,25
+BZ,tempVar109,label34 ,28
+tempVar110,equal,4,40
+RET,tempVar110, ,9
+GOTO,label30 , ,26
+label34 , , ,43
+GOTO,label30 , ,26
+label30 , , ,43
+tempVar111,equal,5,40
+RET,tempVar111, ,9
+RET, , ,9
+label35 , , ,43
+int,switchcodintion,label35 ,1
+var,int,i,10
+var,int,rightnumber,10
+tempVar112,equal,1,40
+i,equal,tempVar112,29
+tempVar113,equal,0,40
+rightnumber,equal,tempVar113,29
+tempVar114,equal,1,40
+i,equal,tempVar114,29
+GOTO,label36 , ,26
+label37 , , ,43
+tempVar115,equal,5,40
+tempVar116,i,tempVar115,20
+BZ,tempVar116,label38 ,28
+label36 , , ,43
+tempVar117,equal,1,40
+tempVar118,i,tempVar117,16
+push,i, ,8
+call,switchcodintionans,label29 ,7
+tempVar119,equal,RET,44
+tempVar120,equal,tempVar119,29
+tempVar121,tempVar118,tempVar120,25
+BZ,tempVar121,label39 ,28
+tempVar122,equal,1,40
+tempVar123,rightnumber,tempVar122,16
+rightnumber,equal,tempVar123,29
+GOTO,label40 , ,26
+label39 , , ,43
+label40 , , ,43
+tempVar124,equal,1,40
+tempVar125,i,tempVar124,16
+i,equal,tempVar125,29
+GOTO,label37 , ,26
+label38 , , ,43
+tempVar126,equal,4,40
+tempVar127,rightnumber,tempVar126,24
+BZ,tempVar127,label41 ,28
+tempVar128,equal,switchcodintion clause  error!,48
+printf,tempVar128,string,42
+GOTO,label42 , ,26
+label41 , , ,43
+label42 , , ,43
+tempVar129,equal,0,40
+tempVar130,rightnumber,tempVar129,24
+BZ,tempVar130,label43 ,28
+RET,i, ,9
+GOTO,label44 , ,26
+label43 , , ,43
+label44 , , ,43
+tempVar131,equal,switchcodintion clause  error!,48
+printf,tempVar131,string,42
+RET, , ,9
+label45 , , ,43
+void,condition,label45 ,3
+int,intermax,5,14
+var,int,iter,10
+tempVar132,equal,0,40
+iter,equal,tempVar132,29
+tempVar133,equal,0,40
+iter,equal,tempVar133,29
+GOTO,label46 , ,26
+label47 , , ,43
+tempVar134,iter,intermax,20
+BZ,tempVar134,label48 ,28
+label46 , , ,43
+label50 , , ,43
+tempVar135,equal,0,40
+tempVar136,iter,tempVar135,25
+BZ,tempVar136,label51 ,28
+tempVar137,equal,0,40
+tempVar138,iter,tempVar137,24
+BZ,tempVar138,label52 ,28
+tempVar139,equal,error 0,48
+printf,tempVar139,string,42
+GOTO,label53 , ,26
+label52 , , ,43
+label53 , , ,43
+GOTO,label49 , ,26
+label51 , , ,43
+tempVar140,equal,1,40
+tempVar141,iter,tempVar140,25
+BZ,tempVar141,label54 ,28
+tempVar142,equal,1,40
+tempVar143,iter,tempVar142,24
+BZ,tempVar143,label55 ,28
+tempVar144,equal,error 1,48
+printf,tempVar144,string,42
+GOTO,label56 , ,26
+label55 , , ,43
+label56 , , ,43
+GOTO,label49 , ,26
+label54 , , ,43
+tempVar145,equal,2,40
+tempVar146,iter,tempVar145,25
+BZ,tempVar146,label57 ,28
+tempVar147,equal,2,40
+tempVar148,iter,tempVar147,24
+BZ,tempVar148,label58 ,28
+tempVar149,equal,error 2,48
+printf,tempVar149,string,42
+GOTO,label59 , ,26
+label58 , , ,43
+label59 , , ,43
+GOTO,label49 , ,26
+label57 , , ,43
+GOTO,label49 , ,26
+label49 , , ,43
+tempVar150,equal,1,40
+tempVar151,iter,tempVar150,16
+iter,equal,tempVar151,29
+GOTO,label47 , ,26
+label48 , , ,43
+RET, , ,9
+label60 , , ,43
+void,condition_test,label60 ,3
+call,ifcondition,label12 ,47
+tempVar152,equal,RET,44
+call,switchcodintion,label35 ,47
+tempVar153,equal,RET,44
+call,condition,label45 ,47
+tempVar154,equal,RET,44
+tempVar155,equal,condition test passed,48
+printf,tempVar155,string,42
+RET, , ,9
+label61 , , ,43
+void,miscellaneous,label61 ,3
+var,int,_,10
+var,int,a,10
+int,array,23,12
+var,int,i,10
+var,int,endid,10
+var,char,ch1,11
+char,buf,256,13
+tempVar156,equal,1,40
+_,equal,tempVar156,29
+tempVar157,equal,2,40
+a,equal,tempVar157,29
+tempVar158,equal,0,40
+i,equal,tempVar158,29
+tempVar159,equal,0,40
+i,equal,tempVar159,29
+GOTO,label62 , ,26
+label63 , , ,43
+tempVar160,equal,23,40
+tempVar161,i,tempVar160,20
+BZ,tempVar161,label64 ,28
+label62 , , ,43
+array,i,i,31
+tempVar162,equal,1,40
+tempVar163,i,tempVar162,16
+i,equal,tempVar163,29
+GOTO,label63 , ,26
+label64 , , ,43
+tempVar164,equal,97,40
+ch1,equal,tempVar164,29
+tempVar165,equal,127,40
+i,equal,tempVar165,29
+endid,equal,i,29
+tempVar166,equal,0,40
+_,equal,tempVar166,29
+tempVar167,equal,0,40
+_,equal,tempVar167,29
+GOTO,label65 , ,26
+label66 , , ,43
+tempVar168,_,endid,20
+BZ,tempVar168,label67 ,28
+label65 , , ,43
+tempVar169,equal,1,40
+tempVar170,_,tempVar169,18
+tempVar171,tempVar170,_,17
+tempVar172,equal,1,40
+tempVar173,tempVar171,tempVar172,17
+tempVar174,equal,2,40
+tempVar175,equal,1,40
+tempVar176,tempVar174,tempVar175,19
+tempVar177,tempVar173,tempVar176,16
+tempVar178,equal,1,40
+tempVar179,tempVar177,tempVar178,17
+tempVar180,equal,tempVar179,29
+tempVar181,equal,2,40
+tempVar182,tempVar180,tempVar181,19
+tempVar183,equal,97,40
+buf,tempVar182,tempVar183,31
+tempVar184,equal,1,40
+tempVar185,_,tempVar184,16
+_,equal,tempVar185,29
+GOTO,label66 , ,26
+label67 , , ,43
+tempVar186,equal,0,40
+tempVar187,buf,tempVar186,30
+tempVar188,equal,97,40
+tempVar189,tempVar187,tempVar188,25
+BZ,tempVar189,label68 ,28
+tempVar190,equal,miscellaneous test passed,48
+printf,tempVar190,string,42
+GOTO,label69 , ,26
+label68 , , ,43
+label69 , , ,43
+RET, , ,9
+label70 , , ,43
+void,miscellaneous_test,label70 ,3
+call,miscellaneous,label61 ,47
+tempVar191,equal,RET,44
+RET, , ,9
+label71 , , ,43
+int,fibonaci,label71 ,1
+para,int,n,5
+label73 , , ,43
+tempVar192,equal,0,40
+tempVar193,n,tempVar192,25
+BZ,tempVar193,label74 ,28
+tempVar194,equal,0,40
+RET,tempVar194, ,9
+GOTO,label72 , ,26
+label74 , , ,43
+tempVar195,equal,1,40
+tempVar196,n,tempVar195,25
+BZ,tempVar196,label75 ,28
+tempVar197,equal,1,40
+RET,tempVar197, ,9
+GOTO,label72 , ,26
+label75 , , ,43
+tempVar198,equal,2,40
+tempVar199,n,tempVar198,25
+BZ,tempVar199,label76 ,28
+tempVar200,equal,1,40
+RET,tempVar200, ,9
+GOTO,label72 , ,26
+label76 , , ,43
+GOTO,label72 , ,26
+label72 , , ,43
+tempVar201,equal,1,40
+tempVar202,n,tempVar201,17
+push,tempVar202, ,8
+call,fibonaci,label71 ,7
+tempVar203,equal,RET,44
+tempVar204,equal,tempVar203,29
+tempVar205,equal,2,40
+tempVar206,n,tempVar205,17
+push,tempVar206, ,8
+call,fibonaci,label71 ,7
+tempVar207,equal,RET,44
+tempVar208,equal,tempVar207,29
+tempVar209,tempVar204,tempVar208,16
+RET,tempVar209, ,9
+RET, , ,9
+label77 , , ,43
+void,fibonaci_test,label77 ,3
+var,int,n,10
+tempVar210,equal,Fibonaci: Please input a unsigned positive integer ?,48
+printf,tempVar210,string,42
+scanf,n,int,39
+n,equal,n,29
+GOTO,label78 , ,26
+label79 , , ,43
+tempVar211,equal,0,40
+tempVar212,n,tempVar211,20
+BZ,tempVar212,label80 ,28
+label78 , , ,43
+tempVar213,equal,0,40
+tempVar214,n,tempVar213,20
+BZ,tempVar214,label81 ,28
+tempVar215,equal,Input error, try again:,48
+printf,tempVar215,string,42
+scanf,n,int,39
+GOTO,label82 , ,26
+label81 , , ,43
+label82 , , ,43
+tempVar216,equal,0,40
+tempVar217,n,tempVar216,23
+BZ,tempVar217,label83 ,28
+tempVar218,equal,The fibonaci's answer is ,48
+printf,tempVar218,string,42
+push,n, ,8
+call,fibonaci,label71 ,7
+tempVar219,equal,RET,44
+tempVar220,equal,tempVar219,29
+tempVar221,equal,tempVar220,29
+printf,tempVar221,int,41
+GOTO,label84 , ,26
+label83 , , ,43
+label84 , , ,43
+tempVar222,equal,1,40
+tempVar223,n,tempVar222,17
+n,equal,tempVar223,29
+tempVar224,equal,1,40
+tempVar225,n,tempVar224,16
+n,equal,tempVar225,29
+GOTO,label79 , ,26
+label80 , , ,43
+RET, , ,9
+label85 , , ,43
+int,mod,label85 ,1
+para,int,n,5
+para,int,m,5
+tempVar226,n,m,19
+tempVar227,tempVar226,m,18
+tempVar228,n,tempVar227,17
+RET,tempVar228, ,9
+RET, , ,9
+label86 , , ,43
+int,gcd,label86 ,1
+para,int,n,5
+para,int,m,5
+var,int,rem,10
+tempVar229,equal,0,40
+rem,equal,tempVar229,29
+tempVar230,equal,0,40
+tempVar231,n,tempVar230,25
+BZ,tempVar231,label87 ,28
+RET,m, ,9
+GOTO,label88 , ,26
+label87 , , ,43
+label88 , , ,43
+tempVar232,equal,0,40
+tempVar233,m,tempVar232,25
+BZ,tempVar233,label89 ,28
+RET,n, ,9
+GOTO,label90 , ,26
+label89 , , ,43
+label90 , , ,43
+push,m, ,8
+push,n, ,8
+push,m, ,8
+call,mod,label85 ,7
+tempVar234,equal,RET,44
+tempVar235,equal,tempVar234,29
+push,tempVar235, ,8
+call,gcd,label86 ,7
+tempVar236,equal,RET,44
+tempVar237,equal,tempVar236,29
+RET,tempVar237, ,9
+RET, , ,9
+label91 , , ,43
+int,isWrongGcd,label91 ,1
+para,int,n,5
+para,int,m,5
+tempVar238,equal,0,40
+tempVar239,n,tempVar238,21
+BZ,tempVar239,label92 ,28
+tempVar240,equal,1,40
+RET,tempVar240, ,9
+GOTO,label93 , ,26
+label92 , , ,43
+label93 , , ,43
+tempVar241,equal,0,40
+tempVar242,m,tempVar241,21
+BZ,tempVar242,label94 ,28
+tempVar243,equal,1,40
+RET,tempVar243, ,9
+GOTO,label95 , ,26
+label94 , , ,43
+label95 , , ,43
+tempVar244,equal,0,40
+RET,tempVar244, ,9
+RET, , ,9
+label96 , , ,43
+void,gcd_test,label96 ,3
+var,int,n,10
+var,int,m,10
+tempVar245,equal,GCD: Please input two unsigned positive integer ?,48
+printf,tempVar245,string,42
+scanf,n,int,39
+scanf,m,int,39
+push,n, ,8
+push,m, ,8
+call,isWrongGcd,label91 ,7
+tempVar246,equal,RET,44
+tempVar247,equal,tempVar246,29
+tempVar248,equal,0,40
+tempVar249,tempVar247,tempVar248,24
+BZ,tempVar249,label97 ,28
+n,equal,n,29
+GOTO,label99 , ,26
+label100 , , ,43
+push,n, ,8
+push,m, ,8
+call,isWrongGcd,label91 ,7
+tempVar250,equal,RET,44
+tempVar251,equal,tempVar250,29
+tempVar252,equal,0,40
+tempVar253,tempVar251,tempVar252,24
+BZ,tempVar253,label101 ,28
+label99 , , ,43
+tempVar254,equal,Input error, try Again: ,48
+printf,tempVar254,string,42
+scanf,n,int,39
+scanf,m,int,39
+tempVar255,equal,1,40
+tempVar256,n,tempVar255,17
+n,equal,tempVar256,29
+tempVar257,equal,1,40
+tempVar258,n,tempVar257,16
+n,equal,tempVar258,29
+GOTO,label100 , ,26
+label101 , , ,43
+GOTO,label98 , ,26
+label97 , , ,43
+label98 , , ,43
+tempVar259,equal,The gcd's answer is ,48
+printf,tempVar259,string,42
+push,n, ,8
+push,m, ,8
+call,gcd,label86 ,7
+tempVar260,equal,RET,44
+tempVar261,equal,tempVar260,29
+tempVar262,equal,tempVar261,29
+printf,tempVar262,int,41
+RET, , ,9
+label102 , , ,43
+int,is_prime,label102 ,1
+para,int,x,5
+var,int,i,10
+tempVar263,equal,2,40
+i,equal,tempVar263,29
+tempVar264,equal,2,40
+tempVar265,x,tempVar264,25
+BZ,tempVar265,label103 ,28
+tempVar266,equal,1,40
+RET,tempVar266, ,9
+GOTO,label104 , ,26
+label103 , , ,43
+label104 , , ,43
+tempVar267,equal,2,40
+i,equal,tempVar267,29
+GOTO,label105 , ,26
+label106 , , ,43
+tempVar268,i,i,18
+tempVar269,tempVar268,x,21
+BZ,tempVar269,label107 ,28
+label105 , , ,43
+push,x, ,8
+push,i, ,8
+call,mod,label85 ,7
+tempVar270,equal,RET,44
+tempVar271,equal,tempVar270,29
+tempVar272,equal,0,40
+tempVar273,tempVar271,tempVar272,25
+BZ,tempVar273,label108 ,28
+tempVar274,equal,0,40
+RET,tempVar274, ,9
+GOTO,label109 , ,26
+label108 , , ,43
+label109 , , ,43
+tempVar275,equal,1,40
+tempVar276,i,tempVar275,16
+i,equal,tempVar276,29
+GOTO,label106 , ,26
+label107 , , ,43
+tempVar277,equal,1,40
+RET,tempVar277, ,9
+RET, , ,9
+label110 , , ,43
+void,prime_factorization,label110 ,3
+para,int,n,5
+var,int,i,10
+var,int,first,10
+tempVar278,equal,2,40
+i,equal,tempVar278,29
+tempVar279,equal,0,40
+first,equal,tempVar279,29
+tempVar280,equal,1,40
+tempVar281,n,tempVar280,25
+BZ,tempVar281,label111 ,28
+tempVar282,equal,1,48
+printf,tempVar282,string,42
+RET, , ,9
+GOTO,label112 , ,26
+label111 , , ,43
+label112 , , ,43
+tempVar283,equal,2,40
+i,equal,tempVar283,29
+GOTO,label113 , ,26
+label114 , , ,43
+tempVar284,i,i,18
+tempVar285,tempVar284,n,21
+BZ,tempVar285,label115 ,28
+label113 , , ,43
+push,i, ,8
+call,is_prime,label102 ,7
+tempVar286,equal,RET,44
+tempVar287,equal,tempVar286,29
+tempVar288,equal,1,40
+tempVar289,tempVar287,tempVar288,25
+BZ,tempVar289,label116 ,28
+push,n, ,8
+push,i, ,8
+call,mod,label85 ,7
+tempVar290,equal,RET,44
+tempVar291,equal,tempVar290,29
+tempVar292,equal,0,40
+tempVar293,tempVar291,tempVar292,25
+BZ,tempVar293,label118 ,28
+n,equal,n,29
+GOTO,label120 , ,26
+label121 , , ,43
+push,n, ,8
+push,i, ,8
+call,mod,label85 ,7
+tempVar294,equal,RET,44
+tempVar295,equal,tempVar294,29
+tempVar296,equal,0,40
+tempVar297,tempVar295,tempVar296,25
+BZ,tempVar297,label122 ,28
+label120 , , ,43
+tempVar298,n,i,19
+n,equal,tempVar298,29
+tempVar299,equal,1,40
+tempVar300,first,tempVar299,25
+BZ,tempVar300,label123 ,28
+tempVar301,equal,*,48
+printf,tempVar301,string,42
+GOTO,label124 , ,26
+label123 , , ,43
+label124 , , ,43
+tempVar302,equal,1,40
+first,equal,tempVar302,29
+tempVar303,equal,i,29
+printf,tempVar303,int,41
+tempVar304,equal,1,40
+tempVar305,n,tempVar304,17
+n,equal,tempVar305,29
+tempVar306,equal,1,40
+tempVar307,n,tempVar306,16
+n,equal,tempVar307,29
+GOTO,label121 , ,26
+label122 , , ,43
+GOTO,label119 , ,26
+label118 , , ,43
+label119 , , ,43
+GOTO,label117 , ,26
+label116 , , ,43
+label117 , , ,43
+tempVar308,equal,1,40
+tempVar309,i,tempVar308,16
+i,equal,tempVar309,29
+GOTO,label114 , ,26
+label115 , , ,43
+tempVar310,equal,1,40
+tempVar311,n,tempVar310,24
+BZ,tempVar311,label125 ,28
+tempVar312,equal,1,40
+tempVar313,first,tempVar312,25
+BZ,tempVar313,label127 ,28
+tempVar314,equal,*,48
+printf,tempVar314,string,42
+GOTO,label128 , ,26
+label127 , , ,43
+label128 , , ,43
+tempVar315,equal,n,29
+printf,tempVar315,int,41
+GOTO,label126 , ,26
+label125 , , ,43
+label126 , , ,43
+RET, , ,9
+label129 , , ,43
+void,prime_factorization_test,label129 ,3
+var,int,n,10
+tempVar316,equal,prime_factorization: Please input a unsigned positive integer(<2^31-1) ?,48
+printf,tempVar316,string,42
+scanf,n,int,39
+n,equal,n,29
+GOTO,label130 , ,26
+label131 , , ,43
+tempVar317,equal,0,40
+tempVar318,n,tempVar317,20
+BZ,tempVar318,label132 ,28
+label130 , , ,43
+tempVar319,equal,0,40
+tempVar320,n,tempVar319,20
+BZ,tempVar320,label133 ,28
+tempVar321,equal,Input error, try again:,48
+printf,tempVar321,string,42
+scanf,n,int,39
+GOTO,label134 , ,26
+label133 , , ,43
+label134 , , ,43
+tempVar322,equal,1,40
+tempVar323,n,tempVar322,17
+n,equal,tempVar323,29
+tempVar324,equal,1,40
+tempVar325,n,tempVar324,16
+n,equal,tempVar325,29
+GOTO,label131 , ,26
+label132 , , ,43
+tempVar326,equal,The factor of n is ,48
+printf,tempVar326,string,42
+push,n, ,8
+call,prime_factorization,label110 ,47
+tempVar327,equal,RET,44
+RET, , ,9
+label135 , , ,43
+int,iswrong,label135 ,1
+para,char,A,6
+tempVar328,equal,69,40
+tempVar329,tempVar328,A,25
+BZ,tempVar329,label136 ,28
+tempVar330,equal,0,40
+RET,tempVar330, ,9
+GOTO,label137 , ,26
+label136 , , ,43
+label137 , , ,43
+tempVar331,equal,77,40
+tempVar332,tempVar331,A,25
+BZ,tempVar332,label138 ,28
+tempVar333,equal,0,40
+RET,tempVar333, ,9
+GOTO,label139 , ,26
+label138 , , ,43
+label139 , , ,43
+tempVar334,equal,72,40
+tempVar335,tempVar334,A,25
+BZ,tempVar335,label140 ,28
+tempVar336,equal,0,40
+RET,tempVar336, ,9
+GOTO,label141 , ,26
+label140 , , ,43
+label141 , , ,43
+tempVar337,equal,1,40
+RET,tempVar337, ,9
+RET, , ,9
+label142 , , ,43
+void,main,label142 ,4
+var,char,kind,10
+tempVar338,equal,Please input Test Type:E(Easy), (M)Middle, H(Hard): ,48
+printf,tempVar338,string,42
+scanf,kind,char,46
+push,kind, ,8
+call,iswrong,label135 ,7
+tempVar339,equal,RET,44
+tempVar340,equal,tempVar339,29
+tempVar341,equal,0,40
+tempVar342,tempVar340,tempVar341,24
+BZ,tempVar342,label143 ,28
+kind,equal,kind,29
+GOTO,label145 , ,26
+label146 , , ,43
+push,kind, ,8
+call,iswrong,label135 ,7
+tempVar343,equal,RET,44
+tempVar344,equal,tempVar343,29
+tempVar345,equal,0,40
+tempVar346,tempVar344,tempVar345,24
+BZ,tempVar346,label147 ,28
+label145 , , ,43
+tempVar347,equal,Try Again: ,48
+printf,tempVar347,string,42
+scanf,kind,char,46
+tempVar348,equal,1,40
+tempVar349,kind,tempVar348,17
+kind,equal,tempVar349,29
+tempVar350,equal,1,40
+tempVar351,kind,tempVar350,16
+kind,equal,tempVar351,29
+GOTO,label146 , ,26
+label147 , , ,43
+tempVar352,equal,kind,29
+printf,tempVar352,char,45
+GOTO,label144 , ,26
+label143 , , ,43
+label144 , , ,43
+label149 , , ,43
+tempVar353,equal,69,40
+tempVar354,kind,tempVar353,25
+BZ,tempVar354,label150 ,28
+call,define_test,label5 ,47
+tempVar355,equal,RET,44
+call,operator_test,label7 ,47
+tempVar356,equal,RET,44
+call,fibonaci_test,label77 ,47
+tempVar357,equal,RET,44
+GOTO,label148 , ,26
+label150 , , ,43
+tempVar358,equal,77,40
+tempVar359,kind,tempVar358,25
+BZ,tempVar359,label151 ,28
+call,dowhile_test,label11 ,47
+tempVar360,equal,RET,44
+call,condition_test,label60 ,47
+tempVar361,equal,RET,44
+call,string_test,label9 ,47
+tempVar362,equal,RET,44
+call,gcd_test,label96 ,47
+tempVar363,equal,RET,44
+GOTO,label148 , ,26
+label151 , , ,43
+tempVar364,equal,72,40
+tempVar365,kind,tempVar364,25
+BZ,tempVar365,label152 ,28
+call,define_test,label5 ,47
+tempVar366,equal,RET,44
+call,operator_test,label7 ,47
+tempVar367,equal,RET,44
+call,dowhile_test,label11 ,47
+tempVar368,equal,RET,44
+call,condition_test,label60 ,47
+tempVar369,equal,RET,44
+call,string_test,label9 ,47
+tempVar370,equal,RET,44
+call,miscellaneous_test,label70 ,47
+tempVar371,equal,RET,44
+call,prime_factorization_test,label129 ,47
+tempVar372,equal,RET,44
+GOTO,label148 , ,26
+label152 , , ,43
+GOTO,label148 , ,26
+label148 , , ,43
+RET, , ,9
+RET, , ,9
+label153 , , ,43

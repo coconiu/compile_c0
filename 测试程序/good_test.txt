@@ -1,0 +1,285 @@
+const int one=1,two=2,three=3;
+const char a='a',b='b';
+const char c='c';
+int v1,v2,v3;
+char vc1,vc2,vc3;
+
+void global_test(){
+	printf("---------global_test---------\n");
+	v1=one;v2=two;v3=three;
+	vc1='a'-1+v1;vc2='a'-1+v2;vc3='a'-1+v3;
+	printf(v1);printf(v2);printf(v3);
+	printf(vc1);printf(vc2);printf(vc3);
+	printf("\n");
+	printf("---------global_test---------\n");
+}
+
+void math_test(){
+	int a,ary[1];
+	printf("---------math_test---------\n");
+	a=0;ary[0]=1;
+	if(1)a=1;
+	if(0)a=2333;
+	a= ((+-1)+(-+1)-(--1)/(++1)*(+0)-(-0)+123*ary[123*1-123/1])+2;
+	printf(a);
+	printf(45678);
+	if(a>0){
+		printf(7);
+	}
+	if(a>=0){
+		printf(6);
+	}
+	if(0==0){
+		if(0<=a){
+			if(0<a)printf(5);
+		}
+	}
+	if(1!=0){
+		printf(4321);
+	}
+	printf("\n");
+	printf("---------math_test---------\n");
+}
+
+void scramble_test(char p1,char p2, char p3, char p4){
+	int _,index_buf[4],big;
+	char c,abcd_buf[4];
+	printf("---------scramble_test---------\n");
+	c=p1;
+	printf(c);
+	printf(p2);
+	c=p3;
+	printf(c);
+	printf(p4);
+	printf("\n");
+	;;;;;;;;;;;;;;
+	{;;;}{;;;}{;;}
+	{}{}{}{}{}{}{}
+	_=+123;_=-234;
+	_=+-1234;_=-_;
+	printf(_);
+	printf("\n");
+	_=4;
+	for(_=_;_>=1;_=_-1){
+		abcd_buf[_-1]='a'+_-1;
+		index_buf[_-1]=_-1;
+		printf(_);
+	}
+	printf("\n");
+	_ = 4;
+	for(_=_;_>=1;_=_-1){
+		printf(abcd_buf[index_buf[_-1]]);
+		
+	}
+	printf("\n");
+	printf("---------scramble_test---------\n");	
+}
+
+char next_char(int c){
+	char b;
+	b=c+1;
+	return (b);
+}
+
+void all_char_test(){
+	char buff[66],c;
+	int i;
+	printf("---------all_char_test---------\n");
+	i=0;
+	c = 'a';
+	for(c=c;c<='z';c=c+1){
+		buff[i] = next_char(c-1);
+		i=i+1;
+	}
+	c = 'A';
+	for(c=c;c<='Z';c=c+1){
+		buff[i] = c;
+		i=i+1;
+		c = c + 1;
+	}
+	c = '0';
+	for(c=c;c<='9';c=c+1){
+		buff[i] = c;
+		i=i+1;		
+	
+	}
+	buff[i] = '+';
+	buff[i+1] = '-';
+	buff[i+2] = '*';
+	buff[i+3] = '/';
+	i = 0;
+	for(i=i;i<66;i=i+1){
+		printf(buff[i]);
+		
+	}
+	printf("\n");
+	printf("---------all_char_test---------\n");
+}
+
+void echo_test(){	
+	int echo_int;
+	char echo_char;
+	printf("---------echo_test---------\n");
+	printf("input an int and a char:\n");
+	scanf(echo_int,echo_char);
+	printf("echo_int: ",echo_int);
+	printf(" echo_char: ",echo_char);
+	printf("\n");
+	printf("---------echo_test---------\n");
+	return;
+}
+
+int fibo1(int n){
+	if(n<=0)
+		return (-1);
+	if(n<=2)
+		return (1);
+
+		return (fibo1(n-1)+fibo1(n-2));
+	return (-2);
+}
+
+int fibo2(int n){
+	const int max=10;
+	int ary[11];
+	int i;
+	if(n>max)
+		return (-1);
+	i = 1;
+	for(i=i;i<=n;i=i+1){
+		if(i==1)
+			ary[i]=1;
+		if(i==2)
+			ary[i]=1;
+		if (i != 1){
+			if (i !=2)
+			ary[i]=ary[i-1]+ary[i-2];
+		}
+		
+	}
+	return (ary[n]);
+}
+
+int fibo3(int n){
+	const int MAX=10;
+	int ary[15];
+	int i;
+	if(n>MAX)
+		return (-1);
+	i=1;
+	for(i=i;i<=n;i=i+1){
+		if(i==1)
+			ary[i]=1;
+		if(i==2)
+			ary[i]=1;
+		if (i!=1){
+			if (i!=2)
+			ary[i]=ary[i-1]+ary[i-2];
+		}
+
+	}
+	
+	return (ary[n]);
+}
+
+void fibo_test(){
+	int i;
+	printf("---------fibo_test---------\n");
+	i = 1;
+	for(i=i;i<=10;i=i+1){
+		printf(i);
+		printf(" fibo1: ",fibo1(i));
+		printf(" fibo2: ",fibo2(i));
+		printf(" fibo3: ",fibo3(i));
+		printf("\n");
+
+	}
+	printf("---------fibo_test---------\n");
+}
+
+int pow(int bottom, int exp){
+	int ans,i;
+	ans=1;
+	i = 1;
+	for(i=i;i<=exp;i=i+1){
+		ans=ans*bottom;
+;
+	}
+	return (ans);
+}
+
+void pow_test(){
+	int cnt;
+	int bottom, exp;
+	cnt = 0;
+	printf("---------pow_test---------\n");
+	for(cnt=cnt;cnt<3;cnt=cnt+1){
+		printf("input bottom: ");
+		scanf(bottom);
+		printf("input exponent: ");
+		scanf(exp);
+		printf("pow: ",pow(bottom,exp));
+		printf("\n");
+
+	}
+	printf("---------pow_test---------\n");
+}
+
+int mod(int a,int b){
+	int divs,_a;
+	divs=a/b;
+	_a=b*divs;
+	return (a-_a);
+}
+
+void mod_test(){
+	int cnt;
+	int a, b;
+	cnt = 0;
+	printf("---------mod_test---------\n");
+	for(cnt=cnt;cnt<3;cnt=cnt+1){
+		printf("input a: ");
+		scanf(a);
+		printf("input b: ");
+		scanf(b);
+		printf("a mod b: ",mod(a,b));
+		printf("\n");
+	}
+	printf("---------mod_test---------\n");
+}
+
+void alphabet(char begin){
+	char ch;
+	ch = begin;
+	for(ch=ch;ch<=begin+25;ch=ch+1){
+		printf(ch);
+	}
+	printf("\n");
+}
+
+void alphabet_test(){
+	printf("---------alphabet_test---------\n");
+	printf("Uppercase: ");
+	alphabet('A');
+	printf("Lowercase: ");
+	alphabet('a');
+	printf("---------alphabet_test---------\n");
+}
+
+
+void main(){
+	const char m = 'm',a='a',i='i',n='n';
+	printf(m);printf(a);printf(i);printf(n);
+	printf(":\n");
+	global_test();
+	math_test();
+	scramble_test('a','b','c','d');
+	all_char_test();
+	echo_test();
+	fibo_test();
+	pow_test();
+	mod_test();
+	alphabet_test();
+	printf("test end.\n");
+	return;
+}
